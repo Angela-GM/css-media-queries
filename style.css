@@ -1,0 +1,89 @@
+/* Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* GRID */
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer"
+    ;
+}
+
+
+/* LAYOUT */
+header {
+    grid-area: header;
+}
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+header {
+    background-color: #CCCCCC;
+}
+nav {
+    background-color: #333333;
+}
+
+/* GLOBALS */
+header {
+    padding: 2rem 1rem;
+}
+
+nav ul {
+
+}
+nav ul li {
+    list-style: none;
+    color: white;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+/* Media Queries */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    header, nav, footer {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (min-width: 1024px){
+    main {
+        display: flex;        
+    }
+    article {
+        width: 70vw;
+    }
+    nav ul {
+        display: flex;
+        gap: 1rem;
+        padding: 0.3rem 0.4rem;
+    }
+
+}
+
+
