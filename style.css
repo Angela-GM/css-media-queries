@@ -19,6 +19,15 @@ body {
     ;
 }
 
+a {
+    text-decoration: none;
+    color:inherit;
+
+}
+
+a:hover {
+    background-color: #338833;
+}
 
 /* LAYOUT */
 header {
@@ -26,39 +35,54 @@ header {
 }
 nav {
     grid-area: nav;
+    margin-bottom: 1.5rem;
 }
 
 main {
     grid-area: main;
+
 }
+
 
 footer {
     grid-area: footer;
+    text-align: end;
 }
 
 
-header {
-    background-color: #CCCCCC;
-}
 nav {
     background-color: #333333;
 }
 
 /* GLOBALS */
-header {
+header, footer {
     padding: 2rem 1rem;
+    background-color: #CCCCCC;
 }
 
-nav ul {
-
-}
 nav ul li {
     list-style: none;
     color: white;
+    height: 100%;
 }
 
+figure {
+    margin:1.5rem 0;
+}
 
+img {
+    object-fit: cover;
+}
 
+p {
+    margin: 1.5rem 0;
+    text-align: justify;
+}
+
+footer {
+    background-color: #CCCCCC;
+
+}
 
 
 /* MEDIA QUERIES */
@@ -67,7 +91,6 @@ nav ul li {
     header, nav, footer {
         display: none;
     }
-
 
 }
 
